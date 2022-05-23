@@ -1,4 +1,6 @@
-# thermelloapp
+# thermelloapp (thermello-site)
+
+Personal project made using Vue.js and Three.js. It is a website of a fictitious bottle shop.
 
 ## Project setup
 ```
