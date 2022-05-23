@@ -9,10 +9,10 @@ import { RGBELoader } from "three/examples/jsm/loaders/RGBELoader";
 import gsap from "gsap";
 import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer.js";
 import { SSAOPass } from "three/examples/jsm/postprocessing/SSAOPass.js";
-import * as dat from "dat.gui";
+//import * as dat from "dat.gui";
 //import { interpolate } from 'gsap/all';
 
-const gui = new dat.GUI();
+//const gui = new dat.GUI();
 
 export default {
   computed: {
@@ -141,8 +141,8 @@ export default {
       //camera.aspect = window.innerWidth / window.innerHeight;
       camera.updateProjectionMatrix();
 
-      const axesHelper = new THREE.AxesHelper(30);
-      scene.add(axesHelper);
+     // const axesHelper = new THREE.AxesHelper(30);
+      //scene.add(axesHelper);
 
       renderer = new THREE.WebGLRenderer({
         antialias: false,
@@ -306,9 +306,9 @@ export default {
       //  this.renderer = renderer
       //  this.scene = scene
       // this.camera=camera
-      gui.domElement.id = "gui";
-      console.log(gui.domElement);
-      gui.domElement.style.zIndex = 100;
+     // gui.domElement.id = "gui";
+     // console.log(gui.domElement);
+     // gui.domElement.style.zIndex = 100;
       // gui.add( camera.position , 'z', -100, 100 ).step(5)
       // gui.add( camera.position , 'x', -100, 100 ).step(5)
       // gui.add( camera.position , 'y', -100, 100 ).step(5)
